@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="386e126e-c925-4a13-bc05-cdd5d522ef4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Student.java" afterDir="false" />
+    <list default="true" id="386e126e-c925-4a13-bc05-cdd5d522ef4a" name="Changes" comment="class Student + pom.xml">
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/Faculty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/domain/University.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +48,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654100252296</updated>
-      <workItem from="1654100254857" duration="2399000" />
+      <workItem from="1654100254857" duration="3006000" />
     </task>
+    <task id="LOCAL-00001" summary="class Student + pom.xml">
+      <created>1654103331585</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654103331585</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +73,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="class Student + pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="class Student + pom.xml" />
   </component>
 </project>

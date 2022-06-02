@@ -9,8 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="386e126e-c925-4a13-bc05-cdd5d522ef4a" name="Changes" comment="version 1.0 2022.06.02">
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/StudentRepository.java" afterDir="false" />
+    <list default="true" id="386e126e-c925-4a13-bc05-cdd5d522ef4a" name="Changes" comment="version 1.1 2022.06.02">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/UniversityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/UniversityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/UniversityListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/universityList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/UniversityServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +30,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -53,7 +64,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_opened_file_path": "D:/Java/IDEA_project/MyEEApp",
+    "last_opened_file_path": "D:/Java/IDEA_project/JavaRushTasks",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -82,6 +93,37 @@
       <option name="MAIN_CLASS_NAME" value="service.StudentServiceTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UniversityServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MicroEEService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.UniversityServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UniversityServiceTest.findUniversities" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MicroEEService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.UniversityServiceTest" />
+      <option name="METHOD_NAME" value="findUniversities" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -177,11 +219,15 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.UniversityServiceTest" />
+      <item itemvalue="JUnit.UniversityServiceTest.findUniversities" />
       <item itemvalue="JUnit.StudentServiceTest" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.78" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UniversityServiceTest" />
+        <item itemvalue="JUnit.UniversityServiceTest.findUniversities" />
         <item itemvalue="JUnit.StudentServiceTest" />
       </list>
     </recent_temporary>
@@ -195,7 +241,7 @@
       <option name="presentableId" value="Default" />
       <updated>1654100252296</updated>
       <workItem from="1654100254857" duration="12347000" />
-      <workItem from="1654149159037" duration="23656000" />
+      <workItem from="1654149159037" duration="34405000" />
     </task>
     <task id="LOCAL-00001" summary="class Student + pom.xml">
       <created>1654103331585</created>
@@ -246,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654181419754</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="version 1.1 2022.06.02">
+      <created>1654182910194</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654182910194</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +324,7 @@
     <MESSAGE value="add DAO, Controller, Request, Response, LocalDateAdapter" />
     <MESSAGE value="fix connect with Data Base" />
     <MESSAGE value="version 1.0 2022.06.02" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 1.0 2022.06.02" />
+    <MESSAGE value="version 1.1 2022.06.02" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 1.1 2022.06.02" />
   </component>
 </project>

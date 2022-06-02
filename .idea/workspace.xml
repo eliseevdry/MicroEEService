@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="MicroEEService:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="386e126e-c925-4a13-bc05-cdd5d522ef4a" name="Changes" comment="fix bug with maven">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rest/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/LocalDateAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/StudentRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/StudentResponse.java" afterDir="false" />
+    <list default="true" id="386e126e-c925-4a13-bc05-cdd5d522ef4a" name="Changes" comment="add DAO, Controller, Request, Response, LocalDateAdapter">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rest/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/StudentResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/StudentResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/springContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +37,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -51,7 +61,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "last_opened_file_path": "D:/Java/IDEA_project/MyEEApp",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "File.Encoding",
@@ -66,7 +76,7 @@
       <recent name="service" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.StudentServiceTest">
     <configuration name="StudentServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MicroEEService" />
       <extension name="coverage">
@@ -82,9 +92,119 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentServiceTest.simpleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MicroEEService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.StudentServiceTest" />
+      <option name="METHOD_NAME" value="simpleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="MicroEEService:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="24676a91-dd67-4bf6-983d-a503b02c2d7f" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59459" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="MicroEEService:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.StudentServiceTest" />
+      <item itemvalue="JUnit.StudentServiceTest.simpleTest" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.78" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.StudentServiceTest" />
+        <item itemvalue="JUnit.StudentServiceTest.simpleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +217,7 @@
       <option name="presentableId" value="Default" />
       <updated>1654100252296</updated>
       <workItem from="1654100254857" duration="12347000" />
-      <workItem from="1654149159037" duration="7853000" />
+      <workItem from="1654149159037" duration="17995000" />
     </task>
     <task id="LOCAL-00001" summary="class Student + pom.xml">
       <created>1654103331585</created>
@@ -127,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654152087452</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add DAO, Controller, Request, Response, LocalDateAdapter">
+      <created>1654157267759</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654157267759</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +276,18 @@
     <MESSAGE value="classes University and Faculty" />
     <MESSAGE value="classes StudentDocument, EducationForm, dependencies, setters, getters" />
     <MESSAGE value="fix bug with maven" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug with maven" />
+    <MESSAGE value="add DAO, Controller, Request, Response, LocalDateAdapter" />
+    <option name="LAST_COMMIT_MESSAGE" value="add DAO, Controller, Request, Response, LocalDateAdapter" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

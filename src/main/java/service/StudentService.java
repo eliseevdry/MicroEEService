@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import view.StudentRequest;
 import view.StudentResponse;
 
+import javax.transaction.Transactional;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -20,7 +21,7 @@ public class StudentService {
 
     @Autowired
     private StudentRepository studentRepository;
-
+    @Transactional
     public List<StudentResponse> getStudentInfo(StudentRequest request) {
         List<Student> student = studentRepository.findStudent(request.getLastName(),
                 request.getFirstName(),

@@ -9,11 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="386e126e-c925-4a13-bc05-cdd5d522ef4a" name="Changes" comment="fix connect with Data Base">
-      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rest/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    <list default="true" id="386e126e-c925-4a13-bc05-cdd5d522ef4a" name="Changes" comment="version 1.0 2022.06.02">
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/StudentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +195,7 @@
       <option name="presentableId" value="Default" />
       <updated>1654100252296</updated>
       <workItem from="1654100254857" duration="12347000" />
-      <workItem from="1654149159037" duration="22182000" />
+      <workItem from="1654149159037" duration="23656000" />
     </task>
     <task id="LOCAL-00001" summary="class Student + pom.xml">
       <created>1654103331585</created>
@@ -242,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654170358310</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="version 1.0 2022.06.02">
+      <created>1654181419754</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654181419754</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +270,7 @@
     <MESSAGE value="fix bug with maven" />
     <MESSAGE value="add DAO, Controller, Request, Response, LocalDateAdapter" />
     <MESSAGE value="fix connect with Data Base" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix connect with Data Base" />
+    <MESSAGE value="version 1.0 2022.06.02" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 1.0 2022.06.02" />
   </component>
 </project>

@@ -9,16 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="386e126e-c925-4a13-bc05-cdd5d522ef4a" name="Changes" comment="add DAO, Controller, Request, Response, LocalDateAdapter">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+    <list default="true" id="386e126e-c925-4a13-bc05-cdd5d522ef4a" name="Changes" comment="fix connect with Data Base">
+      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rest/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rest/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/StudentResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/StudentResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/springContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +26,7 @@
         <option value="Enum" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -76,7 +72,7 @@
       <recent name="service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentServiceTest">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.78">
     <configuration name="StudentServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MicroEEService" />
       <extension name="coverage">
@@ -87,28 +83,15 @@
       </extension>
       <option name="PACKAGE_NAME" value="service" />
       <option name="MAIN_CLASS_NAME" value="service.StudentServiceTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentServiceTest.simpleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MicroEEService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.StudentServiceTest" />
-      <option name="METHOD_NAME" value="simpleTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 8.5.78" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.78" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="MicroEEService:war exploded">
@@ -198,13 +181,11 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.StudentServiceTest" />
-      <item itemvalue="JUnit.StudentServiceTest.simpleTest" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.78" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.StudentServiceTest" />
-        <item itemvalue="JUnit.StudentServiceTest.simpleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +198,7 @@
       <option name="presentableId" value="Default" />
       <updated>1654100252296</updated>
       <workItem from="1654100254857" duration="12347000" />
-      <workItem from="1654149159037" duration="17995000" />
+      <workItem from="1654149159037" duration="22182000" />
     </task>
     <task id="LOCAL-00001" summary="class Student + pom.xml">
       <created>1654103331585</created>
@@ -254,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654157267759</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix connect with Data Base">
+      <created>1654170358310</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654170358310</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,17 +265,7 @@
     <MESSAGE value="classes StudentDocument, EducationForm, dependencies, setters, getters" />
     <MESSAGE value="fix bug with maven" />
     <MESSAGE value="add DAO, Controller, Request, Response, LocalDateAdapter" />
-    <option name="LAST_COMMIT_MESSAGE" value="add DAO, Controller, Request, Response, LocalDateAdapter" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/service/StudentServiceTest.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="fix connect with Data Base" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix connect with Data Base" />
   </component>
 </project>

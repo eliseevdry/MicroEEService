@@ -23,4 +23,9 @@ public class StudentController {
         return studentService.getStudentInfo(request);
     }
 
+    @GET
+    public String getIntro() {
+        return "Send a POST request.";
+    }
+
 }

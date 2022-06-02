@@ -1,6 +1,6 @@
 package domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Table(name = "sr_faculty")
 @Entity

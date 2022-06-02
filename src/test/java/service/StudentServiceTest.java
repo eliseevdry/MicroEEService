@@ -17,6 +17,7 @@ public class StudentServiceTest {
 
     @Test
     public void simpleTest() {
+        studentService.simpleCall();
         LOGGER.info(("DONE!!!"));
     }
 

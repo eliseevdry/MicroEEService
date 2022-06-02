@@ -13,9 +13,9 @@
         http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
 
 
-    <context:component-scan base-package="domain, service"/>
+    <context:component-scan base-package="domain, service, view, rest"/>
 
-    <jpa:repositories base-package="domain, service"
+    <jpa:repositories base-package="domain, service, view, rest"
                       entity-manager-factory-ref="emf"
                       transaction-manager-ref="txManager"/>
 
@@ -42,7 +42,7 @@
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</prop>
                 <prop key="hibernate.show_sql">true</prop>
-                <prop key="hibernate.hbm2ddl.auto">create</prop>
+                <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
             </props>
         </property>
     </bean>

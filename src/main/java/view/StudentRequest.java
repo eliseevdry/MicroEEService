@@ -1,17 +1,21 @@
 package view;
 
-import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
 import java.time.LocalDate;
 
 public class StudentRequest {
     private String firstName;
     private String lastName;
     private String middleName;
-    @XmlJavaTypeAdapter(value = LocalDateAdapter.class)
+    @JsonSerialize(converter = LocalDateToStringConverter.class)
+    @JsonDeserialize(converter = StringToLocalDateConverter.class)
     private LocalDate dateOfBirth;
     private String passportSeria;
     private String passportNumber;
-    @XmlJavaTypeAdapter(value = LocalDateAdapter.class)
+    @JsonSerialize(converter = LocalDateToStringConverter.class)
+    @JsonDeserialize(converter = StringToLocalDateConverter.class)
     private LocalDate passportDate;
 
     public String getFirstName() {
